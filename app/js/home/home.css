@@ -1,4 +1,20 @@
-.sample{
-	background: pink;
+.Username{
+	background: navy;
+	padding: 10px;
 	color: white;
+}
+
+.Password{
+	
+	background: navy;
+	padding: 10px;
+	color: white;
+}
+
+.boxed{
+	width: 1024px;
+	height: 960px;
+	padding: 15px;
+	border: 15px solid navy;
+	margin: 15px burlywood;
 }
