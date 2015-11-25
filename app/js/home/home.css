@@ -1,20 +1,22 @@
-.Username{
+.loginLabel{
 	background: navy;
 	padding: 10px;
 	color: white;
-}
-
-.Password{
+	width: 150px;
+	border: 2px groove royalblue;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	left: 425px;
 	
-	background: navy;
-	padding: 10px;
-	color: white;
 }
 
 .boxed{
+	font-family: Calibri;	
 	width: 1024px;
 	height: 960px;
 	padding: 15px;
 	border: 15px solid navy;
+	border-radius: 10px;
 	margin: 15px burlywood;
 }

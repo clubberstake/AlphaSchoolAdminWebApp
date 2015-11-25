@@ -1,5 +1,4 @@
 <div class="boxed">
-
 	<div>
 
 		<h1><center><font size = "20"><font color = "black">Welcome to Alpha School</h1></center>
@@ -12,21 +11,11 @@
 		</font>
 		</font>
 
-		<h4><center><font size = "6"><font color = "black">Please Login</h4></center>
-		</font>
-		</font>
-
-		<p class="Username"><font size="6"><font color = "white">Username</p></font></font>
-			<input ng-model="entryBox">
-
+		<div>
+			<input class="loginLabel" ng-model="entryBox" placeholder="Please enter ID">
+			<div>
+				<button type="button" ng-click="navigatePageTwo()">Submit</button>
+			</div>
+		</div>
 	</div>
-
-	<div>
-		<h2></h2>
-		<p class="Password"><font size="6"><font color = "white">Password</p></font></font>
-			<input ng-model="PasswordBox">
-	</div>
-
-	<button type="button" ng-click="navigatePageTwo()">Submit</button>
-
 </div>
