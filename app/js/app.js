@@ -6,8 +6,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 		controller: 'HomeController'
 	})
 		.when('/pageTwo', {
-			templateUrl: 'app/js/pageTwo/pageTwo.html',
-			controller: 'PageTwoController'
+			templateUrl: 'app/js/createHomeworkAssignment/createHomeworkAssignment.html',
+			controller: 'CreateHomeworkAssignment'
 		})
 		.otherwise({
             redirectTo: '/home'

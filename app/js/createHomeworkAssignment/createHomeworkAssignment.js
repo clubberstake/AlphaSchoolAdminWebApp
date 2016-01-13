@@ -1,4 +1,4 @@
-app.controller('PageTwoController', ['$scope',
+app.controller('CreateHomeworkAssignment', ['$scope',
 	function ($scope) {
 		$scope.title = 'PageTwo bruh';
 	}]);
