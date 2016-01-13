@@ -1,3 +1,78 @@
-.title{
-	font-family: Calibri;
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper{
+	width:95%;
+	border: 1px solid #212060;
+	box-shadow:10px 10px 5px #888888;
 }
+
+fieldset {
+    border: 0;
+}
+
+textarea {
+	font: inherit;
+	width: 250px;
+}
+
+ul {
+	list-style: none;
+}
+		
+li {
+	display:inline-table;
+	color:#212060;
+}
+
+.above{
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-bottom: 10px;
+}
+
+.buttons{
+	padding:5px;
+}
+
+.upload{
+	padding-left:0px;	
+}
+
+.button1{
+	padding-left:250px;
+	padding-right:5px;
+}
+
+.directions{
+	padding-right:0px;
+}
+
+.grade{
+	padding-right:140px;
+}
+
+.selectclass{
+	padding-right:140px;
+}
+
+.duedate{
+	padding-right:415px;
+}
+
+.btn{
+	background-color:#00a2df;
+	border:none;
+	color:white;
+	padding:8px	
+}
+
+.btn:hover{
+	background:#212060;
+}
+
+
+	
+
