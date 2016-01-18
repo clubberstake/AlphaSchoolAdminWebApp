@@ -1,22 +1,93 @@
-.loginLabel{
-	background: navy;
-	padding: 10px;
+.header{
+    background: midnightblue;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header .text {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: x-large;
+}
+
+.header .socialMediaIcon{
+    padding: 5px;
+}
+
+.loginArea{
+    padding-top: 30px;
+}
+
+.loginArea .title{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #132639;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.loginArea .loginSection{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.loginArea .inputLabel{
+	background: midnightblue;
+	padding: 10px 20px 10px 20px;
 	color: white;
 	width: 150px;
 	border: 2px groove royalblue;
 	border-radius: 10px;
 	text-align: center;
-	position: relative;
-	left: 425px;
-	
+    font-size: medium;
+}
+
+.loginArea .promptText{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #132639;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.loginArea .submitButtonArea{
+     text-align: center;
+     padding-bottom: 30px;
+}
+
+.loginArea .submitButton {
+  background: midnightblue;
+  background-image: -webkit-linear-gradient(top, royalblue, midnightblue);
+  background-image: -moz-linear-gradient(top, royalblue, midnightblue);
+  background-image: -ms-linear-gradient(top, royalblue, midnightblue);
+  background-image: -o-linear-gradient(top, royalblue, midnightblue);
+  background-image: linear-gradient(to bottom, royalblue, midnightblue);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: medium;
+  padding: 10px 20px 10px 20px;
+  border: solid royalblue 2px;
+  text-decoration: none; 
+}
+
+.loginArea .submitButton:hover {
+  background: #132639;
 }
 
 .boxed{
 	font-family: Calibri;	
-	width: 1024px;
-	height: 960px;
-	padding: 15px;
-	border: 15px solid navy;
-	border-radius: 10px;
-	margin: 15px burlywood;
+	width: 95%;
+	height: 95%;
+	border: 5px groove royalblue;
+    background: #b3cce5;
+	border-radius: 2px;
 }

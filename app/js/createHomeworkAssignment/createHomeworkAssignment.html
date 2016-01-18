@@ -1,97 +1,72 @@
-<!doctype html>
-<html>
+<div id="wrapper">
 
-<head>
-    <meta charset="utf-8">
-    <title>Create Homework Assignment</title>
-    <meta charset="utf-8">
-    <title>jQuery UI Datepicker - Default functionality</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="homework.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script>
-        $(document).ready(function() { $("#datepicker").datepicker(); });
-    </script>
-</head>
+    <form id="homework" method="post">
 
-<body>
-    <div>
-        <img src="http://familyguidance.net/HTML5/images/homework-banner2.png" width="950" height="128" />
-    </div>
-    <div id="wrapper">
+        <fieldset id=top>
+            <ul>
+                <li class="grade">
+                    <h3>Select Grade</h3>
 
-        <form id="homework" method="post">
+                    <input type="radio" value="grade 1" name="grade" checked>
+                    <label for="grade1">Grade 1:</label>
+                    <br />
+                    <input type="radio" id="grade3" name="grade">
+                    <label for="grade3">Grade 3:</label>
+                </li>
 
-            <fieldset id=top>
-                <ul>
-                    <li class="grade">
-                        <h3>Select Grade</h3>
+                <li class="selectclass">
+                    <label class="above" for="class">Select Class</label>
+                    <select id="class">
+                        <option value="advanced-english">Advanced English</option>
+                        <option value="intermediate-math">Intermediate Mathematics</option>
+                        <option value="history">History</option>
 
-                        <input type="radio" value="grade 1" name="grade" checked>
-                        <label for="grade1">Grade 1:</label>
-                        <br />
-                        <input type="radio" id="grade3" name="grade">
-                        <label for="grade3">Grade 3:</label>
-                    </li>
+                    </select>
+                </li>
 
-                    <li class="selectclass">
-                        <label class="above" for="class">Select Class</label>
-                        <select id="class">
-                            <option value="advanced-english">Advanced English</option>
-                            <option value="intermediate-math">Intermediate Mathematics</option>
-                            <option value="history">History</option>
-
-                        </select>
-                    </li>
-
-                    <li class="directions">
-                        <label class="above" for="directions">Directions/Description</label>
-                        <textarea rows="8" id="directions"></textarea>
-                    </li>
+                <li class="directions">
+                    <label class="above" for="directions">Directions/Description</label>
+                    <textarea rows="8" id="directions"></textarea>
+                </li>
 
 
-                </ul>
-            </fieldset>
-
-            <fieldset id="bottom">
-
-
-                <ul>
-                    <li class="duedate">
-                        <label class="above">Select Due Date: </label>
-                        <input type="date" id="datepicker" />
-                    </li>
-
-                    <li class="upload">
-                        <label class="above">Upload File</label>
-                        <input type="file" name="File Upload">
-                    </li>
-
-                </ul>
-            </fieldset>
-
-            <fieldset>
-                <ul>
-                    <li class="button1">
-                        <input type="submit" class="btn" value="Student View">
-                    </li>
-
-                    <li class="buttons">
-                        <input type="submit" class="btn" value="Save Changes">
-                    </li>
-
-                    <li class="buttons">
-                        <input type="submit" class="btn" value="Cancel">
-
-                    </li>
-            </fieldset>
             </ul>
+        </fieldset>
 
-        </form>
+        <fieldset id="bottom">
 
-    </div>
 
-</body>
+            <ul>
+                <li class="duedate">
+                    <label class="above">Select Due Date: </label>
+                    <input type="date" id="datepicker" />
+                </li>
 
-</html>
+                <li class="upload">
+                    <label class="above">Upload File</label>
+                    <input type="file" name="File Upload">
+                </li>
+
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <ul>
+                <li class="button1">
+                    <input type="submit" class="btn" value="Student View">
+                </li>
+
+                <li class="buttons">
+                    <input type="submit" class="btn" value="Save Changes">
+                </li>
+
+                <li class="buttons">
+                    <input type="submit" class="btn" value="Cancel">
+
+                </li>
+        </fieldset>
+        </ul>
+
+    </form>
+
+</div>
