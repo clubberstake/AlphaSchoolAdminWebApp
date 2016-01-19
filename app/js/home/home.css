@@ -20,3 +20,9 @@
 	border-radius: 10px;
 	margin: 15px burlywood;
 }
+
+#wrapper{
+	width:95%;
+	border: 1px solid #212060;
+	box-shadow:10px 10px 5px #888888;
+}

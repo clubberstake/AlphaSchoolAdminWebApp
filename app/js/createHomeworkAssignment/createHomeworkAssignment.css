@@ -1,76 +1,133 @@
 @charset "utf-8";
 /* CSS Document */
 
+color{
+	
+}
+
 #wrapper{
-	width:95%;
+	width:100%;
+	length: 100%;
 	border: 1px solid #212060;
 	box-shadow:10px 10px 5px #888888;
+	background-color: slategray;
+	
 }
 
 fieldset {
     border: 0;
+	
+	
 }
 
 textarea {
 	font: inherit;
 	width: 250px;
+	border: 1px solid #212060;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+    height: 130px;
+	
+	
 }
 
 ul {
 	list-style: none;
+	
 }
-		
-li {
+li{
 	display:inline-table;
-	color:#212060;
+	color: #212060;
+	/*Above is to change color of font*/
+}
+li.directions {
+	padding-left:40px;
+	padding-bottom:20px;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 250px;
+    height: 110px;
+	
 }
 
 .above{
 	display:block;
-	font-size:16px;
 	font-weight:bold;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-family: "Georgia", cursive, sans-serif; font-size: 17px;
 	margin-bottom: 10px;
+	
 }
 
 .buttons{
 	padding:5px;
+	
 }
 
 .upload{
-	padding-left:0px;	
+	padding-left:100px;	
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+    height: 90px;
+	
 }
 
 .button1{
 	padding-left:250px;
 	padding-right:5px;
+	
 }
 
 .directions{
 	padding-right:0px;
+	font-family: "Georgia", cursive, sans-serif; font-size: 17px;
 }
 
 .grade{
-	padding-right:140px;
+	padding-right:100px;
+	padding-left: 100px;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+    height: 90px;
+	
+	
 }
 
 .selectclass{
-	padding-right:140px;
+	padding-right:50px;
+	padding-left:50px;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+    height: 90px;
+	
+	
+	
 }
 
 .duedate{
-	padding-right:415px;
+	padding-right:100px;
+	padding-left: 100px;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+    height: 90px;
+	
 }
 
 .btn{
 	background-color:#00a2df;
 	border:none;
 	color:white;
-	padding:8px	
+	padding:8px;
+	font-family: "Georgia", cursive, sans-serif; font-size: 15px;
 }
 
 .btn:hover{
 	background:#212060;
+	font-family: "Georgia", cursive, sans-serif; font-size: 20px;
 }
 
 
