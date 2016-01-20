@@ -1,51 +1,23 @@
 @charset "utf-8";
-/* CSS Document */
-
-color{
-	
-}
-
-#wrapper{
-	width:100%;
-	length: 100%;
-	border: 1px solid #212060;
-	box-shadow:10px 10px 5px #888888;
-	background-color: slategray;
-	
-}
 
 fieldset {
-    border: 0;
-	
-	
-}
-
-textarea {
-	font: inherit;
-	width: 250px;
-	border: 1px solid #212060;
-	border: 3px solid white;
-	border-radius: 30px;
-	width: 200px;
-    height: 130px;
-	
-	
+    /*border: 0;*/
 }
 
 ul {
 	list-style: none;
 	
 }
+
 li{
 	display:inline-table;
 	color: #212060;
 	/*Above is to change color of font*/
 }
+
 li.directions {
 	padding-left:40px;
 	padding-bottom:20px;
-	border: 3px solid white;
-	border-radius: 30px;
 	width: 250px;
     height: 110px;
 	
@@ -57,6 +29,12 @@ li.directions {
 	font-family: "Georgia", cursive, sans-serif; font-size: 17px;
 	margin-bottom: 10px;
 	
+}
+
+.dropDown{
+    font-family: Arial, Helvetica, sans-serif;
+    color: midnightblue;
+    background: royalblue;
 }
 
 .buttons{
@@ -82,6 +60,15 @@ li.directions {
 .directions{
 	padding-right:0px;
 	font-family: "Georgia", cursive, sans-serif; font-size: 17px;
+}
+
+.directionsBox {
+    font: inherit;
+	width: 250px;
+	border: 3px solid royalblue;
+	border-radius: 5px;
+	width: 200px;
+    height: 130px;
 }
 
 .grade{
