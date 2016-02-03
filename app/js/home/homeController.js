@@ -1,8 +1,8 @@
 app.controller('HomeController', ['$scope', '$location',
-	function ($scope, $location) {
-		$scope.entryBox = '';
+    function ($scope, $location) {
+        $scope.entryBox = '';
 
-		$scope.navigatePageTwo = function () {
-			$location.path('/pageTwo');
-		};
-	}]);
+        $scope.navigateCreateHomeworkAssignment = function () {
+            $location.path('/createHomeworkAssignment');
+        };
+    }]);

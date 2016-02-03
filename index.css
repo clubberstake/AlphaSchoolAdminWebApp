@@ -1,0 +1,38 @@
+.header{
+    background: midnightblue;
+    border-radius: 2px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow:10px 10px 5px #888888;
+}
+
+.header .text {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.header .socialMediaIcon{
+    padding: 5px;
+}
+
+.boxed{
+	font-family: Calibri;	
+	width: 60%;
+    left: 20%;
+    position: relative;
+	border: 5px groove royalblue;
+	background: #b3cce5;
+    border-radius: 2px;
+    box-shadow:10px 10px 5px #888888;
+    border-top: none;
+}
+
+.wholePage{
+    background: #FFFFFF url("http://www.alphaschool.org/images/bg01.jpg") no-repeat center top 100px / contain;
+}

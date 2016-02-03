@@ -1,72 +1,59 @@
-<div class="boxed">
+<div class="homework">
 
-    <form id="homework" method="post">
+    <div class="flexContainer">
+        <div class="grade">
+            <label class="above" for="grade">Select Grade</label>
+            <select id="grades">
+                <option class="dropDownGrade" value="grade-one">Grade 1</option>
+                <option class="dropDownGrade" value="grade-two">Grade 2</option>
+                <option class="dropDownGrade" value="grade-three">Grade 3</option>
+            </select>
+        </div>
 
-        <fieldset id=top>
-            <ul>
-                <li class="grade">
-                    <h3>Select Grade</h3>
+        <div class="selectclass">
+            <label class="above" for="selectclass">Select Class</label>
+            <select id="class">
+                <option class="dropDown" value="advanced-english">Advanced English</option>
+                <option class="dropDown" value="intermediate-math">Intermediate Mathematics</option>
+                <option class="dropDown" value="history">History</option>
 
-                    <input type="radio" value="grade 1" name="grade" checked>
-                    <label for="grade1">Grade 1:</label>
-                    <br />
-                    <input type="radio" id="grade3" name="grade">
-                    <label for="grade3">Grade 3:</label>
-                </li>
+            </select>
+        </div>
 
-                <li class="selectclass">
-                    <label class="above" for="class">Select Class</label>
-                    <select id="class">
-                        <option class="dropDown" value="advanced-english">Advanced English</option>
-                        <option value="intermediate-math">Intermediate Mathematics</option>
-                        <option value="history">History</option>
+        <div class="directions">
+            <label class="above" for="directions">Directions/Description</label>
+            <textarea rows="8" class="directionsBox"></textarea>
+        </div>
 
-                    </select>
-                </li>
+    </div>
 
-                <li class="directions">
-                    <label class="above" for="directions">Directions/Description</label>
-                    <textarea rows="8" class="directionsBox"></textarea>
-                </li>
+    <div class="bottom">
+        <div class="flexContainer">
+            <div class="duedate">
+                <label class="above">Select Due Date: </label>
+                <input type="date" id="datepicker">
+            </div>
 
+            <div class="upload">
+                <label class="above">Upload File</label>
+                <input type="file" name="File Upload">
+            </div>
+        </div>
+    </div>
 
-            </ul>
-        </fieldset>
+    <div class="buttonmain">
+        <div class="flexContainerCenter">
+            <div class="buttons">
+                <input type="submit" class="btn" value="Student View">
+            </div>
 
-        <fieldset id="bottom">
+            <div class="buttons">
+                <input type="submit" class="btn" value="Save Changes">
+            </div>
 
-
-            <ul>
-                <li class="duedate">
-                    <label class="above">Select Due Date: </label>
-                    <input type="date" id="datepicker" />
-                </li>
-
-                <li class="upload">
-                    <label class="above">Upload File</label>
-                    <input type="file" name="File Upload">
-                </li>
-
-            </ul>
-        </fieldset>
-
-        <fieldset>
-            <ul>
-                <li class="button1">
-                    <input type="submit" class="btn" value="Student View">
-                </li>
-
-                <li class="buttons">
-                    <input type="submit" class="btn" value="Save Changes">
-                </li>
-
-                <li class="buttons">
-                    <input type="submit" class="btn" value="Cancel">
-
-                </li>
-        </fieldset>
-        </ul>
-
-    </form>
-
+            <div class="buttons">
+                <input type="submit" class="btn" value="Cancel">
+            </div>
+        </div>
+    </div>
 </div>

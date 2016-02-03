@@ -5,7 +5,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 		templateUrl: 'app/js/home/home.html',
 		controller: 'HomeController'
 	})
-		.when('/pageTwo', {
+		.when('/createHomeworkAssignment', {
 			templateUrl: 'app/js/createHomeworkAssignment/createHomeworkAssignment.html',
 			controller: 'CreateHomeworkAssignment'
 		})

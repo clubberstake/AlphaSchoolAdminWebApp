@@ -9,29 +9,30 @@
     <!-- Source Code references -->
     <!--<link rel="stylesheet" href="Content/app/css/navigation.css">-->
     <script src="app/js/app.js"></script>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="app/js/home/home.css">
     <script src="app/js/home/homeController.js"></script>
     <link rel="stylesheet" href="app/js/createHomeworkAssignment/createHomeworkAssignment.css">
     <script src="app/js/createHomeworkAssignment/CreateHomeworkAssignment.js"></script>
 </head>
 
-<body ng-cloak>
+<body ng-cloak class="wholePage">
     <div class="header">
          <a  title="Home" href="#/home">
-            <img alt="Home" src='/../../app/img/logo90th.png'></a>
+            <img alt="Home" src='app/img/logo90th.png'></a>
         <span class="text">Where tradition meets new heights and excellence</span>
         <div class="socialMedia">
             <span class="socialMediaIcon">
             <a title="follow us on Twitter" href="https://twitter.com/thealphaschool">
-                <img alt="follow us on Twitter" src='/../../app/img/twitter40x40.png'></a>
+                <img alt="follow us on Twitter" src='app/img/twitter40x40.png'></a>
         </span>
             <span class="socialMediaIcon">
             <a  title="follow us on Facebook" href="https://www.facebook.com/Providence-Heights-Alpha-School-167330696662743/">
-            <img alt="follow us on Facebook" src='/../../app/img/facebook40x40.png'></a>
+            <img alt="follow us on Facebook" src='app/img/facebook40x40.png'></a>
         </span>
         </div>
     </div>
-    <div ng-view></div>
+    <div ng-view class="boxed"></div>
 </body>
 
 </html>
