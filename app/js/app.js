@@ -13,6 +13,10 @@ app.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'app/js/createCalendarEvent/createCalendarEvent.html',
 			controller: 'CreateCalendarEventController'
 		})
+		.when('/teacherHomepage', {
+			templateUrl: 'app/js/teacherHomepage/teacherHomepage.html',
+			controller: 'TeacherHomepageController'
+		})
 		.otherwise({
             redirectTo: '/home'
         });
