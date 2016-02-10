@@ -3,7 +3,7 @@ app.controller('HomeController', ['$scope', '$location',
         $scope.entryBox = '';
 
         $scope.navigateCreateHomeworkAssignment = function () {
-            // $location.path('/createHomeworkAssignment');
-            $location.path('/pageThree');
+            //$location.path('/createHomeworkAssignment');
+            $location.path('/createAnnouncement');
         };
     }]);

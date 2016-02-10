@@ -9,9 +9,9 @@ app.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'app/js/createHomeworkAssignment/createHomeworkAssignment.html',
 			controller: 'CreateHomeworkAssignmentController'
 		})
-        .when('/pageThree', {
-			templateUrl: 'app/js/pageThree/pageThree.html',
-			controller: 'PageThree'
+        .when('/createAnnouncement', {
+			templateUrl: 'app/js/createAnnouncement/createAnnouncement.html',
+			controller: 'CreateAnnouncementController'
 		})
 		.otherwise({
             redirectTo: '/home'
