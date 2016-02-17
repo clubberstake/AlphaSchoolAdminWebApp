@@ -1,24 +1,19 @@
 <div class="homework">
+       <div class="navBar">
+        <li><a  class="active" href="#/teacherHomepage">Home</a></li>
+        <li><a  href="#/createHomeworkAssignment">Create Homework Assignment</a></li>
+        <li><a href="#/createAnnouncement">Create Announcements</a></li>
+        <li><a href="#/createCalendarEvent">Create Calendar Event</a></li>
+       <div style="float:right;list-style-type:none;">
+            <li><a href="#logout">Sign out</a></li>
+       </div>
+    </div>
     <div class="title">
         <span>Welcome to the Teacher Homepage</span>
 
     </div>
-    
-    <div class="flexContainer">
-
-        <div class="box box2">
-
-            <div class="Button1">
-                <button type="button" class="submitButton" ng-click="navigateCreateCalendarEvent()">Create Calendar Event</button>
-            </div>
-            <div class="Button2">
-                <button type="button" class="submitButton" ng-click="navigateCreateAnnouncement()">Create Announcements</button>
-            </div>
-            <div class="Button3">
-                <button type="button" class="submitButton" ng-click="navigateCreateHomeworkAssignment()">Create Homework Assignment</button>
-            </div>
-        </div>
-
+      
+      <div class="flexContainer">
         <div class="box box1">
             <div class="yearly">
                 <label class="grade" for="yearly">Course List</label>

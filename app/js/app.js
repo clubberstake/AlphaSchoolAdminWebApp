@@ -22,6 +22,25 @@ app.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'app/js/teacherHomepage/teacherHomepage.html',
 			controller: 'TeacherHomepageController'
 		})
+		
+		
+		.when('/viewHomeworkAssignment', {
+			templateUrl: 'app/js/viewHomeworkAssignment/viewHomeworkAssignment.html',
+			controller: 'ViewHomeworkAssignmentController'
+		})
+        .when('/viewAnnouncement', {
+			templateUrl: 'app/js/viewAnnouncement/viewAnnouncement.html',
+			controller: 'ViewAnnouncementController'
+
+		})
+		.when('/viewCalendarEvent', {
+			templateUrl: 'app/js/viewCalendarEvent/viewCalendarEvent.html',
+			controller: 'ViewCalendarEventController'
+		})
+		.when('/studentHomepage', {
+			templateUrl: 'app/js/studentHomepage/studentHomepage.html',
+			controller: 'StudentHomepageController'
+		})
 		.otherwise({
             redirectTo: '/home'
         });
