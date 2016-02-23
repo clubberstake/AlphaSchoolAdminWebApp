@@ -95,13 +95,7 @@
 #cssmenu > ul > li > a:hover:after {
   background: rgb(25,25,112);
 }
-.above{
-	display:block;
-	font-size: large;
-	font-weight:bold;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	margin-bottom: 10px;
-}
+
 
 .dropDown{
     font-family: Arial, Helvetica, sans-serif;
