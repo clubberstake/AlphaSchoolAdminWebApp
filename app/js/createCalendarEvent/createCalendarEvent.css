@@ -105,13 +105,7 @@
 .dropDownMenu{
 	font-size: large;
 }
-.flexContainer{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-between;
-	flex-wrap: wrap;	
-}
+
 .calendar{
 	padding: 40px;  
 	flex-grow: 1;

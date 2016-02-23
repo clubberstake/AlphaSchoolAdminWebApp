@@ -12,35 +12,42 @@
    
 </ul>
 </div>
-    <div class="flexContainer">
-        <div class="grade">
-            <label class="above" for="grade">Select Grade</label>
-            <select id="grades">
-                <option class="dropDownGrade" value="grade-one">Grade 1</option>
-                <option class="dropDownGrade" value="grade-two">Grade 2</option>
-                <option class="dropDownGrade" value="grade-three">Grade 3</option>
-            </select>
-        </div>
-
-        <div class="selectclass">
-            <label class="above" for="selectclass">Select Class</label>
-            <select id="class">
-                <option class="dropDown" value="advanced-english">Advanced English</option>
-                <option class="dropDown" value="intermediate-math">Intermediate Mathematics</option>
-                <option class="dropDown" value="history">History</option>
-
-            </select>
-        </div>
-
+    <div class="flexContainer2">
+        
+ 
         <div class="directions">
             <label class="above" for="directions">Directions/Description</label>
-            <textarea rows="8" class="directionsBox"></textarea>
+            <textarea rows="16" class="directionsBox"></textarea>
         </div>
-
     </div>
 
     <div class="bottom">
+        
         <div class="flexContainer">
+            <div class="box box1">
+            <div class="yearly">
+                <label class="grade" for="yearly">Course List</label>
+                <div class="courseListBox">
+                    <select size="10">
+                        <optgroup class="Grade" label="Grade 1">
+                            <option class="optionChild">Advanced English</option>
+                            <option class="optionChild">Intermediate Mathematics</option>
+                            <option class="optionChild">World History</option>
+                        </optgroup>
+                        <optgroup class="Grade" label="Grade 2">
+                            <option class="optionChild">Advanced Biology</option>
+                            <option class="optionChild">Physics I</option>
+                            <option class="optionChild">Advanced History</option>
+                        </optgroup>
+                        <optgroup class="Grade" label="Grade 3">
+                            <option class="optionChild">Advanced Biology</option>
+                            <option class="optionChild">Physics I</option>
+                            <option class="optionChild">Advanced History</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div> 
+        </div>
             <div class="duedate">
                 <label class="above">Select Due Date: </label>
                 <input type="date" id="datepicker">

@@ -95,7 +95,21 @@
 #cssmenu > ul > li > a:hover:after {
   background: rgb(25,25,112);
 }
-
+.idButton{
+     text-align: center;
+     padding-bottom: 30px;
+  background: midnightblue;
+ 
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 2px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: medium;
+  padding: 10px 20px 10px 20px;
+  border: solid royalblue 2px;
+  text-decoration: none; 
+}
 .title{
 	padding-top: 30px;
     font-size: xx-large;
@@ -139,6 +153,7 @@
 	flex-wrap: wrap;
 	border: 3px solid royalblue;
 	border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .Grade{
