@@ -2,10 +2,23 @@ app.controller('HomeController', ['$scope', '$location',
     function ($scope, $location) {
         $scope.entryBox = '';
 
-        $scope.navigateCreateHomeworkAssignment = function () {
+        $scope.nagvigateHomePage = function name() {
+            if ($scope.entryBox == 'student') {
+                $location.path('/studentHomepage');
+                return;
+            }
 
-            //$location.path('/teacherHomepage');
-            //$location.path('/studentHomepage');   
-              $location.path('/adminAddAccount');  
-        };
+            if ($scope.entryBox == 'teacher') {
+                $location.path('/teacherHomepage');
+                return;
+            }
+
+            if ($scope.entryBox == 'admin') {
+                $location.path('/adminAddAccount');
+                return;
+            }
+
+            $scope.entryBox = 'Do better.';
+        }
+
     }]);
