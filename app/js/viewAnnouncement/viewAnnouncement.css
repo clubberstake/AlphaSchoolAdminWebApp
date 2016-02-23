@@ -130,15 +130,15 @@
     text-align: center;
     padding-bottom: 30px;
 }
-.buttons{
+.buttonss{
 	padding-bottom: 8px;
 	padding-top: 5px;	
 	border:none;
 	color:white;
-	
+  padding-left: 510px;
 }
-.btn{
-	background-color:#00a2df;
+.btns{
+	background-color:midnightblue;
 	padding:5px;
 	border:none;
 	color:white;
@@ -148,6 +148,7 @@
 	flex-wrap: wrap;
 	border: 3px solid royalblue;
 	border-radius: 5px;
+  margin-bottom: 15px; 
 }
 .optionChild{
 	color: black;
