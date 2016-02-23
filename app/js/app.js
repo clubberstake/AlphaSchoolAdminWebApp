@@ -41,6 +41,10 @@ app.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'app/js/studentHomepage/studentHomepage.html',
 			controller: 'StudentHomepageController'
 		})
+		.when('/adminAddAccount', {
+			templateUrl: 'app/js/adminAddAccount/adminAddAccount.html',
+			controller: 'AdminAddAccountController'
+		})
 		.otherwise({
             redirectTo: '/home'
         });

@@ -4,7 +4,8 @@ app.controller('HomeController', ['$scope', '$location',
 
         $scope.navigateCreateHomeworkAssignment = function () {
 
-            $location.path('/teacherHomepage');
-
+            //$location.path('/teacherHomepage');
+            //$location.path('/studentHomepage');   
+              $location.path('/adminAddAccount');  
         };
     }]);
