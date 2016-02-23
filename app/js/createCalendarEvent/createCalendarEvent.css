@@ -94,14 +94,6 @@
 #cssmenu > ul > li > a:hover:after {
   background: rgb(25,25,112);
 }
-.above{
-	display:block;
-	font-size: large;
-	font-weight:bold;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	margin-bottom: 10px;
-}
-
 .dropDownMenu{
 	font-size: large;
 }
@@ -111,12 +103,6 @@
 	align-items: flex-start;
 	align-content: space-between;
 	flex-wrap: wrap;	
-}
-.calendar{
-	padding: 40px;  
-	flex-grow: 1;
-	flex-basis: auto;
-	color: #212060;
 }
 
 #datepicker{
