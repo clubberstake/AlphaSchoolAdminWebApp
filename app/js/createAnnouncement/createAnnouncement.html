@@ -1,28 +1,70 @@
 <div class="announcement">
-   <div class="navBar">
-        <li><a   href="#/teacherHomepage">Home</a></li>
-        <li><a  href="#/createHomeworkAssignment">Create Homework Assignment</a></li>
-        <li><a class="active" href="#/createAnnouncement">Create Announcements</a></li>
-        <li><a  href="#/createCalendarEvent">Create Calendar Event</a></li>
-       <div style="float:right;list-style-type:none;">
-            <li><a href="#logout">Sign out</a></li>
-       </div>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='#/teacherHomepage'>Home</a></li>
+            <li class='active'><a href='#/createAnnouncement'> Create Announcement</a></li>
+            <li><a href='#/createHomeworkAssignment'> Create Homework Assignment</a></li>
+            <li><a href='#/createCalendarEvent'>Create Calendar Event</a></li>
+            <li><a href='#logout'>Logout</a></li>
+
+        </ul>
     </div>
-    
+
+
+
+
+
+
+
     <div class="flexC">
+
         <div class="announceText">
             <label class="above" for="announceText">Announcement</label>
             <textarea rows="16" class="announcementsBox"></textarea>
         </div>
-        
+
     </div>
-    
+
     <div class="flexC2">
-        <div class="duedate">
-                <label class="above">Select Date: </label>
-                <input type="date" id="datepicker">
-        </div>
         
+        
+        <div class="box box1">
+            <div class="yearly">
+                <label class="grade" for="yearly">Course List</label>
+                <div class="courseListBox">
+                    <select size="10">
+                        <optgroup class="Grade" label="Grade 1">
+                            <option class="optionChild">Advanced English</option>
+                            <option class="optionChild">Intermediate Mathematics</option>
+                            <option class="optionChild">World History</option>
+                        </optgroup>
+                        <optgroup class="Grade" label="Grade 2">
+                            <option class="optionChild">Advanced Biology</option>
+                            <option class="optionChild">Physics I</option>
+                            <option class="optionChild">Advanced History</option>
+                        </optgroup>
+                        <optgroup class="Grade" label="Grade 3">
+                            <option class="optionChild">Advanced Biology</option>
+                            <option class="optionChild">Physics I</option>
+                            <option class="optionChild">Advanced History</option>
+                        </optgroup>
+                    </select>
+                </div>
+                </div>
+                </div>
+        
+        
+        
+
+
+        <div class="duedate">
+            <label class="above">Select Date: </label>
+            <input type="date" id="datepicker">
+        </div>
+
         <div class="announceTarget">
             <label class="above" for="announceTarget">Select Recipient</label>
             <select id="class">
@@ -30,29 +72,29 @@
                 <option class="dropDown" value="grade">Grade</option>
                 <option class="dropDown" value="school">School</option>
             </select>
-            
+
         </div>
-        
+
         <div class="upload">
-                <label class="above">Upload File</label>
-                <input type="file" name="File Upload">
+            <label class="above">Upload File</label>
+            <input type="file" name="File Upload">
         </div>
-                
+
     </div>
-    
-      <div class="flexC">
-            <div class="buttons">
-                <input type="submit" class="btn" value="Student View">
-            </div>
 
-            <div class="buttons">
-                <input type="submit" class="btn" value="Save Changes">
-            </div>
-
-            <div class="buttons">
-                <input type="submit" class="btn" value="Cancel">
-            </div>
+    <div class="flexC">
+        <div class="buttons">
+            <input type="submit" class="btn" value="Student View">
         </div>
-        
+
+        <div class="buttons">
+            <input type="submit" class="btn" value="Save Changes">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" class="btn" value="Cancel">
+        </div>
     </div>
+
+</div>
 </div>

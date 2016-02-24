@@ -1,0 +1,121 @@
+.assign{
+    display:block;
+	font-size: large;
+	font-weight:bold;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-bottom: 10px;
+    color: #212060;
+}
+
+.assignCourse{
+    
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  text-align: center;
+  padding: 325px;     
+}
+
+.flexContainer{
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;   
+}
+
+
+.ID{
+    padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	flex-grow: 1;
+	flex-basis: auto;
+	color: #212060;
+}
+
+.idNumber{
+    text-align: center;
+    padding-right: 45px;
+    padding-top: 30px;
+}
+
+.check{
+     text-align: center;
+     padding-right: 45px;
+     padding-top: 30px;
+}
+
+.check .submitButton{
+    background: midnightblue;
+  background-image: -webkit-linear-gradient(top, royalblue, midnightblue);
+  background-image: -moz-linear-gradient(top, royalblue, midnightblue);
+  background-image: -ms-linear-gradient(top, royalblue, midnightblue);
+  background-image: -o-linear-gradient(top, royalblue, midnightblue);
+  background-image: linear-gradient(to bottom, royalblue, midnightblue);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: medium;
+  padding: 10px 20px 10px 20px;
+  border: solid royalblue 2px;
+  text-decoration: none;  
+}
+
+.flexContainerCenter{
+   display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;    
+    
+    
+}
+
+.entry{
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	flex-grow: 1;
+	color: #212060;
+}
+
+.entry2{
+     padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	flex-grow: 1;
+	color: #212060;   
+}
+
+.entry3{
+     padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	flex-grow: 1;
+	color: #212060;
+}
+
+.flexC{
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;	 
+}
+
+.btn{
+	background-color:#00a2df;
+	border:none;
+	color:white;
+	padding:8px;
+	font-family: Arial, Helvetica, sans-serif; font-size: 15px;
+}
+
+.btn:hover{
+	background:#212060;
+	font-family: Arial, Helvetica, sans-serif; font-size: 15px;
+}
+
+.buttons{
+	padding:5px;
+	padding-bottom: 20px;
+	padding-top: 45px;	
+}
