@@ -20,5 +20,4 @@ app.controller('HomeController', ['$scope', '$location',
 
             $scope.entryBox = 'Do better.';
         }
-
     }]);

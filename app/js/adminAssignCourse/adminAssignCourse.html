@@ -1,0 +1,88 @@
+<div class="assign">
+    
+     <div id='cssmenu'>
+        <ul>
+            <li><a href='#/adminAddAccount'>Add Account</a></li>
+            <!--will need to change the tabs to make active with admin console-->
+            <li><a href='#/adminDeleteAccount'> Delete Account</a></li>
+            <li><a href='#/adminAddCourse'> Add Course</a></li>
+            <li class='active'><a href='#/'>Assign Course</a></li>
+            <li><a href='#logout'>Logout</a></li>
+        </ul>
+    </div>
+    <span class="assignCourse">Add Course</span>
+
+    <div class="flexContainer">
+
+        <!--here is the list of staff along with their employee ids-->
+        <div class="ID">
+            <select size="10">
+                <optgroup class="ID's'" label="ID'S: ">
+                    <option class="optionID">100 Ironman</option>
+                    <option class="optionID">200 Hulk</option>
+                    <option class="optionID">300 Captain America</option>
+                    <option class="optionID">400 Thor</option>
+                    <option class="optionID">500 Hawkeye</option>
+                    <option class="optionID">600 Black Widow</option>
+                    <option class="optionID">700 Avengers</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!--this is where the admin must enter the id number-->
+        <div class="idNumber">
+            <span class="promptText">Please type ID number:</span>
+            <input class="inputLabel" ng-model="entryBox" placeholder="Please enter ID">
+        </div>
+        <div class="check">
+            <button type="button" class="submitButton" ng-click="navigateCreateHomeworkAssignment()">Check</button>
+        </div>
+    </div>
+
+    <div class="flexContainerCenter">
+        <!--this is where the dropdown option is for the admin to be created-->
+        <div class="entry">
+            <label class="above" for="adminAssign"></label>
+            <select id="schoolinfo">
+                <option class="dropDown" value="course">Course</option>
+                <option class="dropDown" value="course">Math</option>
+                <option class="dropDown" value="course">Spelling</option>
+                <option class="dropDown" value="course">Reading</option>
+            </select>
+        </div>
+
+        <div class="entry2">
+            <label class="above" for="adminAssign"></label>
+            <select id="gradeinfo">
+                <option class="dropDown" value="grade">Grade</option>
+                <option class="dropDown" value="grade">1</option>
+                <option class="dropDown" value="grade">2</option>
+                <option class="dropDown" value="grade">3</option>
+            </select>
+        </div>
+
+        <div class="entry3">
+            <label class="above" for="adminAssign"></label>
+            <select id="level">
+                <option class="dropDown" value="grade">Level</option>
+                <option class="dropDown" value="grade">Intermediate</option>
+                <option class="dropDown" value="grade">Advance</option>
+                <option class="dropDown" value="grade">Average</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="flexC">
+       
+        <div class="buttons">
+            <input type="submit" class="btn" value="Save">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" class="btn" value="Cancel">
+        </div>
+
+    </div>
+
+</div>
