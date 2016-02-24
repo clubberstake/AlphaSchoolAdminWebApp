@@ -22,8 +22,6 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/js/teacherHomepage/teacherHomepage.html',
             controller: 'TeacherHomepageController'
         })
-
-
         .when('/viewHomeworkAssignment', {
             templateUrl: 'app/js/viewHomeworkAssignment/viewHomeworkAssignment.html',
             controller: 'ViewHomeworkAssignmentController'
@@ -48,6 +46,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/adminAddAccount', {
             templateUrl: 'app/js/adminAddAccount/adminAddAccount.html',
             controller: 'AdminAddAccountController'
+        })
+        .when('/adminAddCourse', {
+            templateUrl: 'app/js/adminAddCourse/adminAddCourse.html',
+            controller: 'AdminAddCourseController'
+        })
+        .when('/adminDeleteAccount', {
+            templateUrl: 'app/js/adminDeleteAccount/adminDeleteAccount.html',
+            controller: 'AdminDeleteAccountController'
         })
         .otherwise({
             redirectTo: '/home'
