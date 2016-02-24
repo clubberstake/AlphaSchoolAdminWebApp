@@ -140,15 +140,13 @@
 }
 
 
-.duedate{
-	padding: 40px;  
+.duedateHW{
 	flex-grow: 1;
 	flex-basis: auto;
 	color: #212060;
 }
 
-.upload{
-	padding: 50px 20px 20px 20px;	
+.uploadHW{
 	flex-grow: 1;
 	flex-basis: auto;
 	color: #212060;
@@ -173,17 +171,19 @@
     color:white;
 	background: midnightblue;
 }
-.flexContainer2{
- display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: space-between;
-	flex-wrap: wrap;
+.flexBottom{
+ display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: space-between;
+   align-items: space-between;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
 }
 
-.flexContainerCenter{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: space-between;	
+.wrapper{
+  	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
