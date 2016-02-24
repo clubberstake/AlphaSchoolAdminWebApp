@@ -95,13 +95,7 @@
 #cssmenu > ul > li > a:hover:after {
   background: rgb(25,25,112);
 }
-.above{
-	display:block;
-	font-size: large;
-	font-weight:bold;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	margin-bottom: 10px;
-}
+
 
 .dropDown{
     font-family: Arial, Helvetica, sans-serif;
@@ -145,14 +139,6 @@
     background: midnightblue;
 }
 
-.selectclass{
-	padding: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-	font-size: large;
-	flex-grow: 1;
-	flex-basis: auto;
-	color: #212060;
-}
 
 .duedate{
 	padding: 40px;  
@@ -187,13 +173,12 @@
     color:white;
 	background: midnightblue;
 }
-
-.flexContainer{
-	display: flex;
-	justify-content: space-between;
+.flexContainer2{
+ display: flex;
+	justify-content: center;
 	align-items: flex-start;
 	align-content: space-between;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 }
 
 .flexContainerCenter{
