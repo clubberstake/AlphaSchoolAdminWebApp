@@ -1,0 +1,42 @@
+.accountHolder{
+	padding-left: 10px;
+}
+.accountHolderNameL{
+	padding-right: 10px;
+}
+
+.flexContainer{
+    
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;   
+    
+}
+
+.flexContainerCenter{
+    
+     display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;    
+    
+}
+
+.flexContainerMiddle{
+    
+     display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;    
+    
+}
+
+.flexContainerEnd{
+    
+     display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;    
+    
+}
