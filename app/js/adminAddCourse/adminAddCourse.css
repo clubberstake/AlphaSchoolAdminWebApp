@@ -1,42 +1,17 @@
-.accountHolder{
-	padding-left: 10px;
-}
-.accountHolderNameL{
-	padding-right: 10px;
-}
-
-.flexContainer{
-    
+.flexVertical{
     display: flex;
+    flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	align-content: space-between;   
-    
+	align-content: space-between;    
 }
 
-.flexContainerCenter{
-    
-     display: flex;
-	justify-content: center;
-	align-items: flex-start;
+.flexHorizontal{
+    display: flex;
+    flex-direction: row;
+	justify-content: center;    
 	align-content: space-between;    
-    
 }
 
-.flexContainerMiddle{
-    
-     display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: space-between;    
-    
-}
-
-.flexContainerEnd{
-    
-     display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: space-between;    
-    
+.padDIVs{
+    margin-left: 100px;
 }

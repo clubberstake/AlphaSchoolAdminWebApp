@@ -9,46 +9,66 @@
             <li><a href='#logout'>Logout</a></li>
         </ul>
     </div>
-    <div class="title">
-        <span>Add Coures</span>
-    </div>
-    <div class="flexContainer">
-      
-            <label class="above" for="courseName">Course Name: </label>
-            <select id="courselist">
-                <option class="dropDown" value="course">Science</option>
-                <option class="dropDown" value="course">Math</option>
-                <option class="dropDown" value="course">Spelling</option>
-                <option class="dropDown" value="course">Reading</option>
-            </select>
+
+    <div class="flexHorizontal">
+        <div class="yearly">
+            <label class="grade" for="yearly">Course List</label>
+            <div class="courseListBox">
+                <select size="10">
+                    <optgroup class="Grade" label="Grade 1">
+                        <option class="optionChild">Advanced English</option>
+                        <option class="optionChild">Intermediate Mathematics</option>
+                        <option class="optionChild">World History</option>
+                    </optgroup>
+                    <optgroup class="Grade" label="Grade 2">
+                        <option class="optionChild">Advanced Biology</option>
+                        <option class="optionChild">Physics I</option>
+                        <option class="optionChild">Advanced History</option>
+                    </optgroup>
+                    <optgroup class="Grade" label="Grade 3">
+                        <option class="optionChild">Advanced Biology</option>
+                        <option class="optionChild">Physics I</option>
+                        <option class="optionChild">Advanced History</option>
+                    </optgroup>
+                </select>
+            </div>
         </div>
 
-  
-        <div class="flexContainerCenter">
-  <label class="above" for="your grade">Your Grade: </label>
-            <select id="gradelevel">
-                <option class="dropDown" value="grade">1</option>
-                <option class="dropDown" value="grade">2</option>
-                <option class="dropDown" value="grade">3</option>
-                <option class="dropDown" value="grade">4</option>
-            </select>
-        </div>
-        </div>
-        <div class="flexContainerMiddle">
-            <label class="above" for="Your Level">Your Level: </label>
-            <select id="levelid">
-                <option class="dropDown" value="level">Basic</option>
-                <option class="dropDown" value="level">Intermediate</option>
-                <option class="dropDown" value="level">Advanced</option>
-               
-            </select>
-        </div>
+        <div class="flexVertical">
+            <div class="padDIVs">
+                <label class="above" for="courseName">Course Name: </label>
+                <select id="courselist">
+                    <option class="dropDown" value="course">Science</option>
+                    <option class="dropDown" value="course">Math</option>
+                    <option class="dropDown" value="course">Spelling</option>
+                    <option class="dropDown" value="course">Reading</option>
+                </select>
+            </div>
+
+
+            <div class="padDIVs">
+                <label class="above" for="your grade">Your Grade: </label>
+                <select id="gradelevel">
+                    <option class="dropDown" value="grade">1</option>
+                    <option class="dropDown" value="grade">2</option>
+                    <option class="dropDown" value="grade">3</option>
+                    <option class="dropDown" value="grade">4</option>
+                </select>
+            </div>
+
+            <div class="padDIVs">            
+                <label class="above" for="Your Level">Your Level: </label>
+                <select id="levelid">
+                    <option class="dropDown" value="level">Basic</option>
+                    <option class="dropDown" value="level">Intermediate</option>
+                    <option class="dropDown" value="level">Advanced</option>
+                </select>
+            </div>
         </div>
     </div>
-    <div class="flexContainerEnd">
+    <div>
         <div class="buttons">
             <input type="button" class="btn" value="Add Coures">
         </div>
     </div>
-</div>
 </div>

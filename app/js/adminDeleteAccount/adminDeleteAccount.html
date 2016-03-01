@@ -1,63 +1,52 @@
 <div>
     <div id='cssmenu'>
         <ul>
-            <li ><a href='#/adminAddAccount'>Add Account</a></li>
+            <li><a href='#/adminAddAccount'>Add Account</a></li>
             <!--will need to change the tabs to make active with admin console-->
             <li class='active'><a href='#/adminDeleteAccount'> Delete Account</a></li>
             <li><a href='#/adminAddCourse'> Add Course</a></li>
             <li><a href='#/adminAssignCourse'>Assign Course</a></li>
             <li><a href='#logout'>Logout</a></li>
         </ul>
-    
-<div class="title">
-        <span>Delete Account</span>
     </div>
-  
-<style type="text/css" scoped>
-table.GeneratedTable {
-width:70%;
-background-color:#FFFFFF;
-border-collapse:collapse;border-width:2px;
-border-color:#336600;
-border-style:outset;
-color:#000000;
-}
 
-table.GeneratedTable td, table.GeneratedTable th {
-border-width:1px;
-border-color:#336600;
-border-style:outset;
-padding:3px;
-}
+    <span class="assignCourse">Delete Account</span>
 
-table.GeneratedTable thead {
-background-color:#0000FF;
-}
-</style>
+    <div class="flexContainer">
 
-<!-- HTML Code -->
-<table class="GeneratedTable">
-<thead>
-<tr>
-<th>ID Number,Last Name,First Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ID Number:</td>
-</tr>
-<tr>
-<td>Last Name:</td>
-</tr>
-<tr>
-<td>First Name:</td>
-</tr>
-</tbody>
-</table>
-    <div class="flexContainerCenter">
-        <div class="buttons">
-            <input type="button" class="btn" value="DELETE">
+        <!--here is the list of staff along with their employee ids-->
+        <div class="ID">
+            <select size="10">
+                <optgroup class="ID's'" label=" Listed ID'S: ">
+                    <option class="optionID">100 Ironman</option>
+                    <option class="optionID">200 Hulk</option>
+                    <option class="optionID">300 Captain America</option>
+                    <option class="optionID">400 Thor</option>
+                    <option class="optionID">500 Hawkeye</option>
+                    <option class="optionID">600 Black Widow</option>
+                    <option class="optionID">700 Avengers</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!--this is where the admin must enter the id number-->
+        <div class="idNumber">
+            <span class="promptText">Please type ID number:</span>
+            <input class="inputLabel" ng-model="entryBox" placeholder="Please enter ID">
+        </div>
+        <div class="check">
+            <button type="button" class="submitButton" ng-click="navigateCreateHomeworkAssignment()">Check</button>
         </div>
     </div>
-</div>
+    <div class="flexC">
+
+        <div class="buttons">
+            <input type="submit" class="btn" value="Delete">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" class="btn" value="Cancel">
+        </div>
+
+    </div>
 </div>
