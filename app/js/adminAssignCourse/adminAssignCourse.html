@@ -1,6 +1,6 @@
 <div class="assign">
-    
-     <div id='cssmenu'>
+
+    <div id='cssmenu'>
         <ul>
             <li><a href='#/adminAddAccount'>Add Account</a></li>
             <!--will need to change the tabs to make active with admin console-->
@@ -10,14 +10,14 @@
             <li><a href='#logout'>Logout</a></li>
         </ul>
     </div>
-    <span class="assignCourse">Add Course</span>
+    <span class="assignCourse">Assign Course</span>
 
     <div class="flexContainer">
 
         <!--here is the list of staff along with their employee ids-->
         <div class="ID">
             <select size="10">
-                <optgroup class="ID's'" label="ID'S: ">
+                <optgroup class="ID's'" label=" Listed ID'S: ">
                     <option class="optionID">100 Ironman</option>
                     <option class="optionID">200 Hulk</option>
                     <option class="optionID">300 Captain America</option>
@@ -42,9 +42,10 @@
     <div class="flexContainerCenter">
         <!--this is where the dropdown option is for the admin to be created-->
         <div class="entry">
+            <span class="course">Please Select Course</span>
             <label class="above" for="adminAssign"></label>
             <select id="schoolinfo">
-                <option class="dropDown" value="course">Course</option>
+                <option class="dropDown" value="course">Science</option>
                 <option class="dropDown" value="course">Math</option>
                 <option class="dropDown" value="course">Spelling</option>
                 <option class="dropDown" value="course">Reading</option>
@@ -52,6 +53,7 @@
         </div>
 
         <div class="entry2">
+            <span class="grades">Please Select Grade</span>
             <label class="above" for="adminAssign"></label>
             <select id="gradeinfo">
                 <option class="dropDown" value="grade">Grade</option>
@@ -62,9 +64,9 @@
         </div>
 
         <div class="entry3">
+            <span class="range">Please Select Level</span>
             <label class="above" for="adminAssign"></label>
             <select id="level">
-                <option class="dropDown" value="grade">Level</option>
                 <option class="dropDown" value="grade">Intermediate</option>
                 <option class="dropDown" value="grade">Advance</option>
                 <option class="dropDown" value="grade">Average</option>
@@ -74,7 +76,7 @@
     </div>
 
     <div class="flexC">
-       
+
         <div class="buttons">
             <input type="submit" class="btn" value="Save">
         </div>
