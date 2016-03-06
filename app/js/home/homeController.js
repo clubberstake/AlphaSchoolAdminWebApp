@@ -4,7 +4,7 @@ app.controller('HomeController', ['$scope', '$location',
 
         $scope.nagvigateHomePage = function name() {
             if ($scope.entryBox == 'student') {
-                $location.path('/studentHomepage');
+                $location.path('/viewCalendarEvent');
                 return;
             }
 

@@ -35,10 +35,6 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/js/viewCalendarEvent/viewCalendarEvent.html',
             controller: 'ViewCalendarEventController'
         })
-        .when('/studentHomepage', {
-            templateUrl: 'app/js/studentHomepage/studentHomepage.html',
-            controller: 'StudentHomepageController'
-        })
         .when('/adminAssignCourse', {
             templateUrl: 'app/js/adminAssignCourse/adminAssignCourse.html',
             controller: 'AdminAssignCourseController'
