@@ -1,0 +1,20 @@
+emailUser{
+	height: 400px;
+	width: 500px;
+}
+.directionsBox1 {
+    font: inherit;
+	   
+	border: 3px solid royalblue;
+	border-radius: 5px;
+}
+to{
+	padding-top: 10px;
+}
+.sectionHeading2{
+	font-family: Arial, Helvetica, sans-serif; font-size: 40px;
+	color: #212060;
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	
+}

@@ -16,4 +16,9 @@ app.controller('TeacherHomepageController', ['$scope', '$location',
             $location.path('/createAnnouncement');
 
         };
+         $scope.navigateCreateAnnouncement = function () {
+
+            $location.path('/createEmail');
+
+        };
     }]);

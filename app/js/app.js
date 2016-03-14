@@ -51,6 +51,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/js/adminDeleteAccount/adminDeleteAccount.html',
             controller: 'AdminDeleteAccountController'
         })
+         .when('/createEmail', {
+            templateUrl: 'app/js/createEmail/createEmail.html',
+            controller: 'createEmailController'
+        })
         .otherwise({
             redirectTo: '/home'
         });
