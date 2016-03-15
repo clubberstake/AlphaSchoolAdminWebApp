@@ -1,17 +1,9 @@
 .assign{
     display:block;
-	font-size: large;
-	font-weight:bold;
+	
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	margin-bottom: 10px;
     color: #212060;
-}
-
-.assignCourse{
-    
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-  text-align: center;
-  padding: 325px;     
 }
 
 .id{
