@@ -22,26 +22,6 @@
     text-align: center;
     padding-bottom: 30px;
 }
-.flexContainerCenter{
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: space-between;	
-}
-div.transbox {
-  margin: 60px;
-  background-color: #ffffff;
-  border: 2px solid gray;
-  opacity: 0.6;
-  filter: alpha(opacity=60); 
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}
-
   body {
   	font-family: "Montserrat";  /* just a cutsom font */
   }

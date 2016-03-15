@@ -2,12 +2,7 @@ emailUser{
 	height: 400px;
 	width: 500px;
 }
-.directionsBox1 {
-    font: inherit;
-	   
-	border: 3px solid royalblue;
-	border-radius: 5px;
-}
+
 to{
 	padding-top: 10px;
 }
