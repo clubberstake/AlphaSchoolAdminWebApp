@@ -1,14 +1,5 @@
 var app = angular.module('alphaAdminWebApp', ['ngRoute', 'ngResource']);
 
-// app.config(['$httpProvider', function($httpProvider) {
-//     // $httpProvider.defaults.useXDomain = true;
-//     // $httpProvider.defaults.withCredentials = true;
-    
-//     $httpProvider.defaults.headers['Access-Control-Allow-Origin'] = 'http://localhost:8000';
-//     // delete $httpProvider.defaults.headers.common['X-Requested-With'];
-//     console.log($httpProvider.defaults.headers);
-// }]);
-
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/home', {
         templateUrl: 'app/js/home/home.html',
