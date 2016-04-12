@@ -20,14 +20,20 @@ app.factory('UrlService', ['$http', function($http) {
         return promise;
     };
 
-    var adminAddAccountGetScreenData = function name(params) {
+    var adminAddAccountPostScreenData = function name(params) {
+        console.log('Attempting adminAddAccountPostPost post');
+        var promise = $http.post(baseUrl + 'AddAccount', JSON.stringify(admin)).success(function(data) {
+            return data;
+        });
+
+        return promise;
 
     }
 
     return {
         adminDeleteAccountGetScreenData: adminDeleteAccountGetScreenData,
         adminDeleteAccountPostDelete: adminDeleteAccountPostDelete,
-        adminAddAccountGetScreenData: adminAddAccountGetScreenData
+        adminAddAccountPostScreenData: adminAddAccountPostScreenData
     }
 
 }]);
