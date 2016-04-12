@@ -20,9 +20,14 @@ app.factory('UrlService', ['$http', function($http) {
         return promise;
     };
 
+    var adminAddAccountGetScreenData = function name(params) {
+
+    }
+
     return {
         adminDeleteAccountGetScreenData: adminDeleteAccountGetScreenData,
-        adminDeleteAccountPostDelete: adminDeleteAccountPostDelete
+        adminDeleteAccountPostDelete: adminDeleteAccountPostDelete,
+        adminAddAccountGetScreenData: adminAddAccountGetScreenData
     }
 
 }]);
