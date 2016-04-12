@@ -1,4 +1,4 @@
-app.controller('adminAddAccountController', ['$scope', '$location',
+app.controller('AdminAddAccountController', ['$scope', '$location',
     function($scope, $location) {
 
 
