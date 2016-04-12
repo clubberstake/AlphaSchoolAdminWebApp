@@ -9,12 +9,13 @@ app.controller('AdminDeleteAccountController', ['$scope', '$location', 'AdminDel
             $location.path('/adminAddAccount');
         };
 
-        AdminDeleteAccountService.get().then(function(data) {
-            console.log(data);
+        AdminDeleteAccountService.get().then(function(responseObj) {
+            console.log(responseObj);
         });
 
-        AdminDeleteAccountService.post().then(function(data) {
-            console.log(data);
+        AdminDeleteAccountService.post().then(function(responseObj) {
+            console.log(responseObj.data);
+            console.log('Full Name -> ' + responseObj.data.FullName);
         });
     }]);
 
