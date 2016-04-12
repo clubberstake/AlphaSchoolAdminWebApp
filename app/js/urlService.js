@@ -1,33 +1,37 @@
-app.factory('UrlService', ['$http', function($http) {
+app.factory('UrlService', ['$http', function ($http) {
 
     var baseUrl = 'http://localhost:61581/api/';
 
-    var adminDeleteAccountGetScreenData = function() {
+    var adminDeleteAccountGetScreenData = function () {
         console.log('Attempting adminDeleteAccountGetScreenData get');
-        var promise = $http.get(baseUrl + 'values').success(function(data) {
+        var promise = $http.get(baseUrl + 'values').success(function (data) {
             return data;
         });
 
         return promise;
     };
 
-    var adminDeleteAccountPostDelete = function(student) {
+    var adminDeleteAccountPostDelete = function (student) {
         console.log('Attempting adminDeleteAccountPostDelete post');
-        var promise = $http.post(baseUrl + 'values', JSON.stringify(student)).success(function(data) {
+        var promise = $http.post(baseUrl + 'values', JSON.stringify(student)).success(function (data) {
             return data;
         });
 
         return promise;
     };
+    
+    var studentCalendarEventGetScreenData = function () {
+        console.log('Attempting studentCalendarEventGetScreenData get');
+        var promise = $http.get(baseUrl + 'CalendarEvent').success(function (data) {
+            return data;
+        });
 
-    var adminAddAccountGetScreenData = function name(params) {
-
-    }
-
+        return promise;
+    };
+    
     return {
         adminDeleteAccountGetScreenData: adminDeleteAccountGetScreenData,
         adminDeleteAccountPostDelete: adminDeleteAccountPostDelete,
-        adminAddAccountGetScreenData: adminAddAccountGetScreenData
-    }
-
+        studentCalendarEventGetScreenData: studentCalendarEventGetScreenData
+    };
 }]);
