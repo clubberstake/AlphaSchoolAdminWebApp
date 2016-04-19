@@ -26,6 +26,23 @@ app.factory('UrlService', ['$http', function($http) {
         return promise;
     };
 
+  var sampleTeacherHomepagePost = function(teacher) {
+        var promise = $http.post(baseUrl + 'values', JSON.stringify(teacher)).success(function(data) {
+            return data;
+        });
+
+        return promise;
+    };
+    
+    var teacherHomepageGetTeacherInfo = function() {
+        var promise = $http.get(baseUrl + 'TeacherHomepage').success(function(data) {
+            return data;
+        });
+
+        return promise;
+    };
+
+
     var adminAddAccountGetScreenData = function name(params) {
 
     }
@@ -34,7 +51,9 @@ app.factory('UrlService', ['$http', function($http) {
         valuesControllerSamplePost: valuesControllerSamplePost,
         adminDeleteAccountGetScreenData: adminDeleteAccountGetScreenData,
         adminDeleteAccountDelete: adminDeleteAccountDelete,
-        adminAddAccountGetScreenData: adminAddAccountGetScreenData
+        adminAddAccountGetScreenData: adminAddAccountGetScreenData,
+        sampleTeacherHomepagePost: sampleTeacherHomepagePost,
+        teacherHomepageGetTeacherInfo: teacherHomepageGetTeacherInfo
     }
 
 }]);
