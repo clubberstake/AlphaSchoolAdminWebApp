@@ -1,3 +1,4 @@
+/* global id */
 app.factory('UrlService', ['$http', function($http) {
 
     var baseUrl = 'http://localhost:61581/api/';
@@ -26,6 +27,32 @@ app.factory('UrlService', ['$http', function($http) {
         return promise;
     };
 
+    var sampleTeacherHomepagePost = function(teacher) {
+        var promise = $http.post(baseUrl + 'values', JSON.stringify(teacher)).success(function(data) {
+            return data;
+        });
+
+        return promise;
+    };
+
+    var teacherHomepageGetTeacherInfo = function() {
+        var promise = $http.get(baseUrl + 'TeacherHomepage').success(function(data) {
+            return data;
+        });
+
+        return promise;
+    };
+
+    var studentCalendarEventGetScreenData = function(id) {
+        console.log('Attempting studentCalendarEventGetScreenData get');
+        var promise = $http.get(baseUrl + 'CalendarEvent/id' + id).success(function(data) {
+
+            return data;
+        });
+
+        return promise;
+    };
+
     var adminAddAccountPostScreenData = function(admin) {
         console.log('Attempting adminAddAccountPostPost post');
         var promise = $http.post(baseUrl + 'AddAccount', JSON.stringify(admin)).success(function(data) {
@@ -35,15 +62,16 @@ app.factory('UrlService', ['$http', function($http) {
         return promise;
 
     }
-    
     var adminAddCourseGetScreenData = function() {
         var promise = $http.get(baseUrl + 'AddCourse').success(function(data) {
             return data;
         });
 
         return promise;
+
     };
-     var adminAddCoursePostScreenData = function(course) {
+
+    var adminAddCoursePostScreenData = function(course) {
         console.log('Attempting adminAddCoursePostPost post');
         var promise = $http.post(baseUrl + 'AddCourse', JSON.stringify(course)).success(function(data) {
             return data;
@@ -51,8 +79,27 @@ app.factory('UrlService', ['$http', function($http) {
 
         return promise;
 
-    }
+    };
 
+    var studentHomeworkAssignmentGetScreenData = function(id) {
+        console.log('Attempting studentHomeworkAssignmentGetScreenData get');
+        var promise = $http.get(baseUrl + 'HomeworkAssignment/id' + id).success(function(data) {
+
+            return data;
+        });
+
+        return promise;
+
+    };
+
+    var studentAnnouncementGetScreenData = function(id) {
+        console.log('Attempting studentAnnouncementGetScreenData get');
+        var promise = $http.get(baseUrl + 'Announcement/id=' + id).success(function(data) {
+            return data;
+        });
+
+        return promise;
+    };
 
     return {
         valuesControllerSamplePost: valuesControllerSamplePost,
@@ -60,8 +107,12 @@ app.factory('UrlService', ['$http', function($http) {
         adminDeleteAccountDelete: adminDeleteAccountDelete,
         adminAddAccountPostScreenData: adminAddAccountPostScreenData,
         adminAddCourseGetScreenData: adminAddCourseGetScreenData,
-        adminAddCoursePostScreenData: adminAddCoursePostScreenData
+        adminAddCoursePostScreenData: adminAddCoursePostScreenData,
+        sampleTeacherHomepagePost: sampleTeacherHomepagePost,
+        teacherHomepageGetTeacherInfo: teacherHomepageGetTeacherInfo,
+        studentCalendarEventGetScreenData: studentCalendarEventGetScreenData,
+        studentHomeworkAssignmentGetScreenData: studentHomeworkAssignmentGetScreenData,
+        studentAnnouncementGetScreenData: studentAnnouncementGetScreenData
 
-    }
-
+    };
 }]);
