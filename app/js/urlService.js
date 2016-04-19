@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 app.factory('UrlService', ['$http', function ($http) {
-=======
-/* global id */
-app.factory('UrlService', ['$http', function($http) {
->>>>>>> 216206a55cb1e155f07a0063e5c2b6fa851901d0
 
     var baseUrl = 'http://localhost:61581/api/';
 
@@ -133,7 +128,7 @@ app.factory('UrlService', ['$http', function($http) {
 
     var studentHomeworkAssignmentGetScreenData = function (id) {
         console.log('Attempting studentHomeworkAssignmentGetScreenData get');
-        var promise = $http.get(baseUrl + 'HomeworkAssignment/id' + id).success(function (data) {
+        var promise = $http.get(baseUrl + 'HomeworkAssignment/id=' + id).success(function (data) {
 
             return data;
         });
@@ -172,7 +167,6 @@ app.factory('UrlService', ['$http', function($http) {
         valuesControllerSamplePost: valuesControllerSamplePost,
         adminDeleteAccountGetScreenData: adminDeleteAccountGetScreenData,
         adminDeleteAccountDelete: adminDeleteAccountDelete,
-        adminAddAccountGetScreenData: adminAddAccountGetScreenData,
         teacherCreateHomeworkGetScreenData: teacherCreateHomeworkGetScreenData,
         teacherCreateHomeworkPostScreenData: teacherCreateHomeworkPostScreenData,
         adminAddAccountPostScreenData: adminAddAccountPostScreenData,

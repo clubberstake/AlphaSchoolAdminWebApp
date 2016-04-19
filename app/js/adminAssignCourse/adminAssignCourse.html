@@ -1,4 +1,4 @@
- <div class="assign">
+<div class="assign">
 
     <div id='cssmenu'>
         <ul>
@@ -10,19 +10,19 @@
             <li><a href='#logout'>Logout</a></li>
         </ul>
     </div>
- 
-     <div class="title">
+
+    <div class="title">
         <span>Assign Course</span>
     </div>
-    
+
 
     <div class="flexC">
 
         <!--here is the list of staff along with their employee ids-->
         <div class="id">
-                <label class="id" for="school">ID's Listed</label>
-                <div class="idListBox">
-                    <select size="10">
+            <label class="id" for="school">ID's Listed</label>
+            <div class="idListBox">
+                <select size="10">
                         <optgroup class="id" label="Names:  A-D">
                             <option class="optionChild">Avengers    001</option>
                             <option class="optionChild">Black Widow     002</option>
@@ -39,8 +39,8 @@
                             <option class="optionChild">Zion    009</option>
                         </optgroup>
                     </select>
-                </div>
             </div>
+        </div>
 
         <!--this is where the admin must enter the id number-->
         <div class="idNumber">
@@ -57,11 +57,10 @@
         <div class="entry">
             <span class="course">Please Select Course</span>
             <label class="above" for="adminAssign"></label>
-            <select id="schoolinfo">
-                <option class="dropDown" value="course">Science</option>
-                <option class="dropDown" value="course">Math</option>
-                <option class="dropDown" value="course">Spelling</option>
-                <option class="dropDown" value="course">Reading</option>
+            <select ng-model="selectedCourse">
+                <option class="dropDown" ng-repeat="course in courseList" value={{selectedCourse}}>
+                    {{course.name}}
+                </option>
             </select>
         </div>
 
