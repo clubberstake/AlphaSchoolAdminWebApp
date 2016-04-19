@@ -1,4 +1,4 @@
-app.controller('ViewCalendarEventController', ['$scope', '$location',
+app.controller('ViewCalendarEventController', ['$scope', '$location', 
     function ($scope, $location) {
 
     
