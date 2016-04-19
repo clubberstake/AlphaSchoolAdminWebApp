@@ -1,3 +1,4 @@
+/* global id */
 app.factory('UrlService', ['$http', function ($http) {
 
     var baseUrl = 'http://localhost:61581/api/';
@@ -26,18 +27,18 @@ app.factory('UrlService', ['$http', function ($http) {
         return promise;
     };
 
-    var studentCalendarEventGetScreenData = function () {
+    var studentCalendarEventGetScreenData = function (id) {
         console.log('Attempting studentCalendarEventGetScreenData get');
-        var promise = $http.get(baseUrl + 'CalendarEvent').success(function (data) {
+        var promise = $http.get(baseUrl + 'CalendarEvent/id' + id).success(function (data) {
             return data;
         });
 
         return promise;
     };
 
-    var studentHomeworkAssignmentGetScreenData = function () {
+    var studentHomeworkAssignmentGetScreenData = function (id) {
         console.log('Attempting studentHomeworkAssignmentGetScreenData get');
-        var promise = $http.get(baseUrl + 'HomeworkAssignment').success(function (data) {
+        var promise = $http.get(baseUrl + 'HomeworkAssignment/id' + id).success(function (data) {
             return data;
         });
 

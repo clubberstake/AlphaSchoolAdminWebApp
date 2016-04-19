@@ -14,17 +14,12 @@ app.controller('ViewHomeworkAssignmentController', ['$scope', '$location', 'Stud
 app.factory('StudentHomeworkAssignmentService', ['$http', 'UrlService', function ($http, UrlService) {
 
     var getData = function () {
-        
-        return UrlService.studentHomeworkAssignmentGetScreenData();
+         var id = '12345';
+        return UrlService.studentHomeworkAssignmentGetScreenData(id);
     };
 
     return {
         get: getData,
     }
-
-
-
-
-
 
     }]);
