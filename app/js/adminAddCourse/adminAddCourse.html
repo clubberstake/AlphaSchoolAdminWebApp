@@ -9,28 +9,18 @@
             <li><a href='#logout'>Logout</a></li>
         </ul>
     </div>
- <div class="title">
+    <div class="title">
         <span>Add Course</span>
     </div>
     <div class="flexHorizontal">
         <div class="yearly">
             <label class="grade" for="yearly">Course List</label>
             <div class="courseListBox">
-                <select size="10">
-                    <optgroup class="Grade" label="Grade 1">
-                        <option class="optionChild">Advanced English</option>
-                        <option class="optionChild">Intermediate Mathematics</option>
-                        <option class="optionChild">World History</option>
-                    </optgroup>
-                    <optgroup class="Grade" label="Grade 2">
-                        <option class="optionChild">Advanced Biology</option>
-                        <option class="optionChild">Physics I</option>
-                        <option class="optionChild">Advanced History</option>
-                    </optgroup>
-                    <optgroup class="Grade" label="Grade 3">
-                        <option class="optionChild">Advanced Biology</option>
-                        <option class="optionChild">Physics I</option>
-                        <option class="optionChild">Advanced History</option>
+                <select size="10" ng-model="selectedCourse">
+                    <optgroup class="Grade" ng-repeat="gradeList in courseList" label={{gradeList.grade.name}}>  
+                        <option class="optionChild" ng-repeat="course in gradeList.grade.courses" value={{selectedCourse}}>
+                            {{course.courseName}}
+                            </option>
                     </optgroup>
                 </select>
             </div>
@@ -58,7 +48,7 @@
                 </select>
             </div>
 
-            <div class="padDIVs">            
+            <div class="padDIVs">
                 <label class="above" for="Your Level">Your Level: </label>
                 <select id="levelid">
                     <option class="dropDown" value="level">Basic</option>
