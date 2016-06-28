@@ -1,6 +1,6 @@
 var app = angular.module('alphaAdminWebApp', ['ngRoute', 'ngResource']);
 
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/home', {
         templateUrl: 'app/js/home/home.html',
         controller: 'HomeController'
@@ -12,7 +12,6 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/createAnnouncement', {
             templateUrl: 'app/js/createAnnouncement/createAnnouncement.html',
             controller: 'CreateAnnouncementController'
-
         })
         .when('/createCalendarEvent', {
             templateUrl: 'app/js/createCalendarEvent/createCalendarEvent.html',
@@ -29,7 +28,6 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/viewAnnouncement', {
             templateUrl: 'app/js/viewAnnouncement/viewAnnouncement.html',
             controller: 'ViewAnnouncementController'
-
         })
         .when('/viewCalendarEvent', {
             templateUrl: 'app/js/viewCalendarEvent/viewCalendarEvent.html',

@@ -5,10 +5,10 @@
         </div>
         <div class="loginSection">
             <span class="promptText">Please type ID to enter site:</span>
-            <input class="inputLabel" ng-model="entryBox" placeholder="Please enter ID">
+            <input class="inputLabel" ng-model="entryBox" placeholder="Please enter ID" ng-enter="navigateHomePage()">
         </div>
         <div class="submitButtonArea">
-            <button type="button" class="submitButton" ng-click="nagvigateHomePage()">Submit</button>
+            <button type="button" class="submitButton" ng-click="navigateHomePage()">Submit</button>
         </div>
     </div>
 </div>
