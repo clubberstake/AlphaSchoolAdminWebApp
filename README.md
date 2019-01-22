@@ -72,5 +72,5 @@ to use whatever works for you.
       unit/             --> unit level specs/tests
 	  
 [git-home]: http://git-scm.com
-[jasmine]: http://pivotal.github.com/jasmine/
+[jasmine]: https://jasmine.github.io/
 [karma]: http://karma-runner.github.io
